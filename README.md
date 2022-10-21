@@ -1,6 +1,6 @@
 # Testing de Aplicaciones: Trabajo Práctico Obligatorio
 ## Nombre del equipo
-- 'FFC'
+- 'HDP'
 ## Integrantes
 - 'Martina Degui 1129586'
 - 'Camila Sturlesi 1150508'
