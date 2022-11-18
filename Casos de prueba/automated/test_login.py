@@ -27,5 +27,6 @@ class TestLogin():
     self.driver.find_element(By.NAME, "password").click()
     self.driver.find_element(By.NAME, "password").send_keys("sample")
     self.driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
+    # Assert user name is displayed in the page
     user_name = self.driver.find_element(By.CSS_SELECTOR, "dropbtn").text
     assert "Sample" in user_name
