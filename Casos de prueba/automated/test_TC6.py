@@ -26,16 +26,12 @@ class TestDireccion():
     self.driver.find_element(By.NAME, "email").send_keys("sample@example.com")
     self.driver.find_element(By.NAME, "password").send_keys("sample")
     self.driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
+    self.driver.find_element(By.CLASS_NAME, "dropbtn").click()
     self.driver.find_element(By.LINK_TEXT, "Your profile").click()
     self.driver.find_element(By.LINK_TEXT, "Edit Profile").click()
     self.driver.find_element(By.CSS_SELECTOR, "p:nth-child(4)").click()
     self.driver.find_element(By.NAME, "address1").send_keys("Buenos Aires")
     self.driver.find_element(By.CSS_SELECTOR, "input:nth-child(11)").click()
     self.driver.find_element(By.ID, "logo").click()
-    element = self.driver.find_element(By.LINK_TEXT, "Your orders")
-    actions = ActionChains(self.driver)
-    actions.move_to_element(element).perform()
-    element = self.driver.find_element(By.CSS_SELECTOR, "body")
-    actions = ActionChains(self.driver)
-    actions.move_to_element(element, 0, 0).perform()
+
   
