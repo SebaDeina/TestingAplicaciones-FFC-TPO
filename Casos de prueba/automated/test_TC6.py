@@ -32,7 +32,6 @@ class TestDireccion():
     self.driver.find_element(By.CSS_SELECTOR, "p:nth-child(4)").click()
     self.driver.find_element(By.NAME, "address1").send_keys("Buenos Aires")
     self.driver.find_element(By.CSS_SELECTOR, "input:nth-child(11)").click()
-    self.driver.find_element(By.ID, "logo").click()
-    assert self.driver.current_url  == "http://http://127.0.0.1:5000/account/profile"
+    assert self.driver.current_url == "http://127.0.0.1:5000/account/profile"
 
   
